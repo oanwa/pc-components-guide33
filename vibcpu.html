@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбрать процессор</title>
+    <link rel="stylesheet" href="Стиль/style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Как же правильно выбрать процессор?</div>
+            <ul class="nav-links">
+                <li><a href="#glav">О процессорах</a></li>
+                <li><a href="#Amd">Выбор процессора AMD</a></li>
+                <li><a href="#Intel">Выбор процессора Intel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="glav" class="hero">
+            <h1>Что такое процессор и что о нём надо знать перед выбором?</h1>
+            <p>Сегодня для рассмотрения будут взяты процессоры от фирм Amd и Intel.</p>
+        </section>
+
+        <!-- AMD -->
+        <section id="Amd" class="components-section">
+            <h2 class="section-title">Процессоры AMD</h2>
+            <div class="components-grid">
+                <div class="component-card" data-component="Amd">
+                    <div class="component-image">
+                        <img src="Фотки/Сборка/Amd.png" alt="Amd">
+                    </div>
+                    <h3>Процессоры от AMD</h3>
+                    <p><strong>Для чего лучше всего подойдёт:</strong></p>
+                    <ul class="usage-list">
+                        <li>Многопоточные рабочие нагрузки</li>
+                        <li>Видеомонтаж и рендеринг (Premiere Pro, DaVinci Resolve, Blender)</li>
+                        <li>3D-моделирование (Cinema 4D, Maya, 3ds Max)</li>
+                        <li>Стриминг (кодирование видео в реальном времени)</li>
+                        <li>Научные вычисления и программирование</li>
+                    </ul>
+                    <div class="specs">
+                        <h4>Ключевые характеристики</h4>
+                        <ul>
+                            <li>Больше ядер и потоков в одинаковом ценовом сегменте</li>
+                            <li>Техпроцесс: 5-7 нм (более энергоэффективные)</li>
+                            <li>Архитектура: Zen 3, Zen 4</li>
+                            <li>Сокеты: AM4, AM5</li>
+                            <li>Технологии: Precision Boost, StoreMI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intel -->
+        <section id="Intel" class="components-section">
+            <h2 class="section-title">Процессоры Intel</h2>
+            <div class="components-grid">
+                <div class="component-card" data-component="Intel">
+                    <div class="component-image">
+                        <img src="Фотки/Сборка/Intel.png" alt="Intel">
+                    </div>
+                    <h3>Процессоры от Intel</h3>
+                    <p><strong>Для чего лучше всего подойдёт:</strong></p>
+                    <ul class="usage-list">
+                        <li>Игры (особенно старые и оптимизированные)</li>
+                        <li>Киберспортивные игры (CS2, Valorant, Overwatch 2)</li>
+                        <li>Игры с упором на single-core производительность</li>
+                        <li>Эмуляторы консолей (RPCS3, Yuzu)</li>
+                        <li>Профессиональные приложения с Intel-оптимизацией</li>
+                        <li>Adobe Photoshop, Lightroom, AutoCAD, Revit</li>
+                    </ul>
+                    <div class="specs">
+                        <h4>Ключевые характеристики</h4>
+                        <ul>
+                            <li>Более высокая тактовая частота в single-core</li>
+                            <li>Техпроцесс: Intel 7 (10 nm Enhanced SuperFin)</li>
+                            <li>Архитектура: Raptor Lake, Raptor Lake Refresh</li>
+                            <li>Сокеты: LGA 1700, LGA 1851</li>
+                            <li>Технологии: Turbo Boost, Thread Director</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сравнение -->
+        <section id="comparison" class="comparison">
+            <h2>Сравнительная таблица по сегментам</h2>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Сегмент</th>
+                            <th>AMD</th>
+                            <th>Intel</th>
+                            <th>Рекомендация</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Бюджетный</td>
+                            <td>Ryzen 5 5600</td>
+                            <td>Core i3-13100</td>
+                            <td>AMD - лучше многопоточность</td>
+                        </tr>
+                        <tr>
+                            <td>Средний</td>
+                            <td>Ryzen 5 7600X</td>
+                            <td>Core i5-13600K</td>
+                            <td>Паритет - AMD для многозадачности, Intel для игр</td>
+                        </tr>
+                        <tr>
+                            <td>Высокий</td>
+                            <td>Ryzen 7 7800X3D</td>
+                            <td>Core i7-14700K</td>
+                            <td>AMD для игр, Intel для смешанных задач</td>
+                        </tr>
+                        <tr>
+                            <td>Энтузиаст</td>
+                            <td>Ryzen 9 7950X</td>
+                            <td>Core i9-14900K</td>
+                            <td>AMD для рендеринга, Intel для максимальной частоты</td>
+                        </tr>
+                        <tr>
+                            <td>Гейминг</td>
+                            <td>Ryzen 7 7800X3D</td>
+                            <td>Core i5-14600K</td>
+                            <td>AMD X3D - лучшие игровые результаты</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Руководство по выбору процессоров. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+    <!-- Секция гайдов -->
+    <section id="guides" class="guides">
+        <h2>Полезные руководства</h2>
+        <div class="guides-grid">
+            <div class="guide-card">
+                <h3>Главная страница</h3>
+                <p>Вернуться на основную страницу с обзором всех комплектующих ПК</p>
+                <a href="index.html" class="guide-btn">Перейти</a>
+            </div>
+            <div class="guide-card">
+                <h3>Полная сборка ПК</h3>
+                <p>Подробное руководство по сборке компьютера от А до Я</p>
+                <a href="sborka.html" class="guide-btn">Перейти</a>
+            </div>
+        </div>
+    </section>
+</html>

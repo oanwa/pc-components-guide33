@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по ПК - Всё о компьютерных комплектующих</title>
+    <link rel="stylesheet" href="Стиль/styles.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <nav>
+            <div class="logo">Всё о компьютерах</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#components">Комплектующие</a></li>
+                <li><a href="#comparison">Сравнение</a></li>
+                <li><a href="#guides">Гайды</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Герой секция -->
+        <section id="home" class="hero">
+            <h1>Компьютерные комплектующих</h1>
+            <p>Изучите, как работают компоненты ПК, что за что отвечает и как правильно собрать свой компьютер</p>
+        </section>
+
+        <!-- Сетка комплектующих -->
+        <section id="components" class="components-grid">
+            <!-- Карточка процессора -->
+            <div class="component-card" data-component="cpu">
+                <div class="component-image">
+                    <img src="Фотки/CPU.jpg" alt="Процессор" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Процессор (CPU)</h3>
+                <p><strong>Что делает:</strong> Мозг компьютера, выполняет все вычисления</p>
+                <p><strong>Ключевые характеристики:</strong> Тактовая частота, количество ядер, сокет</p>
+                <div class="specs">
+                    <h4>Основные сокеты:</h4>
+                    <ul>
+                        <li>Intel: LGA 1700, LGA 1851</li>
+                        <li>AMD: AM4, AM5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Карточка материнской платы -->
+            <div class="component-card" data-component="motherboard">
+                <div class="component-image">
+                    <img src="Фотки/MB.png" alt="Процессор" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Материнская плата</h3>
+                <p><strong>Что делает:</strong> Связывает все компоненты в единую систему</p>
+                <p><strong>Ключевые характеристики:</strong> Чипсет, сокет, форм-фактор, слоты расширения</p>
+                <div class="specs">
+                    <h4>Основные чипсеты:</h4>
+                    <ul>
+                        <li>Intel: Z790, B760, H770</li>
+                        <li>AMD: X670, B650, A620</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Карточка видеокарты -->
+            <div class="component-card" data-component="gpu">
+                <div class="component-image">
+                    <img src="Фотки/GPU.jpeg" alt="Процессор" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Видеокарта (GPU)</h3>
+                <p><strong>Что делает:</strong> Обрабатывает графику и выводит изображение на монитор</p>
+                <p><strong>Ключевые характеристики:</strong> Объем памяти, частота ядра, тип памяти</p>
+                <div class="specs">
+                    <h4>Основные производители:</h4>
+                    <ul>
+                        <li>NVIDIA: RTX 40xx series</li>
+                        <li>AMD: RX 7000 series</li>
+                        <li>Intel: Arc series</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Карточка оперативной памяти -->
+            <div class="component-card" data-component="ram">
+                <div class="component-image">
+                    <img src="Фотки/RAM.jpg" alt="Процессор" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Оперативная память (RAM)</h3>
+                <p><strong>Что делает:</strong> Временное хранение данных для быстрого доступа процессора</p>
+                <p><strong>Ключевые характеристики:</strong> Объем, частота, тайминги, тип (DDR4/DDR5)</p>
+                <div class="specs">
+                    <h4>Современные стандарты:</h4>
+                    <ul>
+                        <li>DDR4: 2133-4800 МГц</li>
+                        <li>DDR5: 4800-8400+ МГц</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Карточка процессора -->
+            <div class="component-card" data-component="PWR">
+                <div class="component-image">
+                    <img src="Фотки/PWR.jpg" alt="Кулер" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Охлаждение (Кулер)</h3>
+                <p><strong>Что делает:</strong> Отвечает за охлаждение процессора, избегая перегрева. Также есть более эфективные - СЖО (система жидкостного охлаждения)</p>
+                <p><strong>Ключевые характеристики:</strong> Обороты вентилятора, разъёмы для питания вентилятора, сокет</p>
+                <div class="specs">
+                    <h4>Основные сокеты:</h4>
+                    <ul>
+                        <li>Intel: LGA 1700, LGA 1200</li>
+                        <li>AMD: AM4, AM5</li>
+                    </ul>
+                    <h4>Разъемы питания:</h4>
+                    <ul>
+                        <li>3pin, 4pin, 4pin (pwr)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="component-card" data-component="BOX">
+                <div class="component-image">
+                    <img src="Фотки/BOX.jpg" alt="Корпус" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <h3>Корпус</h3>
+                <p><strong>Что это:</strong>Исходя из названия понятно, что это короб для всех комплектующих. Но стоит учитывать, что у корпусов есть свои форм-факторы.</p>
+                <p><strong>Размеры корпуса:</strong>Со списком можно онакомиться ниже.</p>
+                <ul>
+                <li>Full-Tower, Midi-Tower, Mini-Tower, SFF, Desktop, Cube</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Секция сравнения -->
+        <section id="comparison" class="comparison">
+            <h2>Сравнение компонентов</h2>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Компонент</th>
+                            <th>На что влияет</th>
+                            <th>На что обращать внимание</th>
+                            <th>Совместимость</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Процессор</td>
+                            <td>Общая производительность системы</td>
+                            <td>Сокет, количество ядер, частота</td>
+                            <td>Совместимость с сокетом материнской платы</td>
+                        </tr>
+                        <tr>
+                            <td>Материнская плата</td>
+                            <td>Совместимость всех компонентов</td>
+                            <td>Чипсет, сокет, количество слотов</td>
+                            <td>Сокет CPU, тип RAM, форм-фактор корпуса</td>
+                        </tr>
+                        <tr>
+                            <td>Кулер</td>
+                            <td>Температура и стабильность работы процессора. Влияет на уровень шума.</td>
+                            <td>Тип (воздушный или СЖО), теплосъемность (TDP), уровень шума, физические размеры.</td>
+                            <td>Сокет на материнской плате, питание для вентилятора.</td>
+                        </tr>
+                        <tr>
+                            <td>Корпус</td>
+                            <td>Внешний вид, организация кабелей, охлаждение системы и уровень шума.</td>
+                            <td>Форм-фактор (поддерживаемые платы), размеры, материал, количество и тип предустановленных вентиляторов, максимальная длина видеокарты и высота кулера.</td>
+                            <td>Размеры корпуса, продуваемость</td>
+                        </tr>
+                        <tr>
+                            <td>Блок питания (БП, PSU)</td>
+                            <td>Стабильность и надежность работы всей системы. Подача чистой и достаточной мощности.</td>
+                            <td>Мощность (Вт), сертификат эффективности (80 Plus), форм-фактор, тип кабелей (модульный).</td>
+                            <td>Совместимость с форм-фактором корпуса. Достаточная мощность для всех компонентов, особенно для видеокарты. Наличие всех необходимых коннекторов (CPU 4+4pin, GPU 6+2pin).</td>
+                        </tr>
+                        <tr>
+                            <td>Накопитель (Память)</td>
+                            <td>Скорость загрузки ОС, запуска приложений и загрузки уровней в играх.</td>
+                            <td>Тип (SSD NVMe, SATA SSD, HDD), объем, скорость чтения/записи.</td>
+                            <td>SSD NVMe: наличие M.2 слота на материнской плате. SSD/HDD SATA: наличие SATA-портов и места в корпусе.</td>
+                        </tr>
+                        <tr>
+                            <td>Видеокарта (GPU)</td>
+                            <td>Производительность в играх, скорость рендеринга 3D-графики и работа в программах для монтажа и моделирования.</td>
+                            <td>Видеопроцессор (GPU), объем и тип видеопамяти, система охлаждения, энергопотребление.</td>
+                            <td>Наличие совместимого слота (PCIe x16) на материнской плате. Достаточная мощность блока питания. Физические размеры для корпуса.</td>
+                        </tr>
+                        <tr>
+                            <td>ОЗУ</td>
+                            <td>Производительность в играх, скорость рендеринга 3D-графики и работа в программах для монтажа и моделирования.</td>
+                            <td>Объем (ГБ), тип (DDR4/DDR5), частота (МГц), тайминги (латентность).</td>
+                            <td>Совместимость с материнской платой (тип DDR и слоты). Поддержка частоты процессором и платой.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Секция гайдов -->
+        <section id="guides" class="guides">
+            <h2>Полезные гайды</h2>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <h3>Как выбрать процессор</h3>
+                    <p>Подробное руководство по выбору CPU для разных задач</p>
+                    <a href="vibcpu.html" class="guide-btn">Читать</a>
+                </div>
+                <div class="guide-card">
+                    <h3>Сборка ПК с нуля</h3>
+                    <p>Пошаговая инструкция по сборке компьютера</p>
+                    <a href="sborka.html" class="guide-btn">Читать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 А чо писать. Все права защищены.</p>
+            <p>Сайт для изучения компьютерных комплектующих</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
